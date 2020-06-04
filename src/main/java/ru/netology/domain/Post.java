@@ -2,9 +2,14 @@ package ru.netology.domain;
 
 public class Post {
     private int postId;
-    private int authorId;
+    private int ownerId;
     private int dateAndTime;
     private String text;
+    private String domain;
+    private String query;
+    private int ownersOnly;
+    private int count;
+    private int offset;
 
     private String comment;
     private int commentatorId;
@@ -16,21 +21,26 @@ public class Post {
 
     private int countlike;
     private int userLike;
+    private boolean trueLike;
 
     public int getPostId() {
+
         return postId;
     }
 
     public void setPostId(int postId) {
         this.postId = postId;
+
     }
 
-    public int getAuthorId() {
-        return authorId;
+    public int getOwnerId() {
+
+        return ownerId;
     }
 
-    public void setAuthorId(int authorId) {
-        this.authorId = authorId;
+    public void setOwnerId(int ownerId) {
+
+        this.ownerId = ownerId;
     }
 
     public int getDateAndTime() {
@@ -113,5 +123,43 @@ public class Post {
         this.trueLike = trueLike;
     }
 
-    private boolean trueLike;
+    public String getDomain() {
+        return domain;
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
+
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
+
+    public int getOwnersOnly() {
+        return ownersOnly;
+    }
+
+    public void setOwnersOnly(int ownersOnly) {
+        this.ownersOnly = ownersOnly;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getOffset() {
+        return offset;
+    }
+
+    public void setOffset(int offset) {
+        this.offset = offset;
+    }
 }
