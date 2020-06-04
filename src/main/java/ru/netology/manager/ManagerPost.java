@@ -1,6 +1,11 @@
-package ru.netology.domain;
+package ru.netology.manager;
 
-public class MainPost {
+import ru.netology.domain.CommentManager;
+import ru.netology.domain.LikeManager;
+import ru.netology.domain.Post;
+import ru.netology.domain.RepostManager;
+
+public class ManagerPost {
     Post post = new Post();
 
 
